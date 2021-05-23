@@ -1,6 +1,5 @@
 FROM golang:latest as builder
 ARG ENV
-RUN echo "-- $ENV --"
 WORKDIR /app
 COPY . .
 RUN go mod download \
