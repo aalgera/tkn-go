@@ -1,5 +1,5 @@
 FROM golang:latest as builder
-ARGS ENV
+ARG ENV
 RUN echo "-- $ENV --"
 WORKDIR /app
 COPY . .
