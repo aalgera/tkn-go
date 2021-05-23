@@ -1,5 +1,5 @@
 FROM golang:latest as builder
-ARG ENV
+ARG ENV1
 WORKDIR /app
 COPY . .
 RUN go mod download \
